@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project X</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Manrope:wght@400;500;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-header">
+        <div class="container mx-auto px-4 lg:px-20">
+            <div class="flex justify-between items-center pt-7">
+                <div class="">
+                    <img src="./img/logo.png" alt="">
+                </div>
+                <a href="#newsletter" class="bg-blue text-white px-9 py-4 rounded-lg text-sm">Join waitlist</a>
+            </div>
+            <div class="flex flex-col lg:flex-row mt-16 lg:mt-26">
+                <div class="flex-1">
+                    <p class="font-dm-sans text-xl lg:text-2xl leading-7">Easy to Use Onboarding Solution.</p>
+                    <h1
+                        class="font-manrope font-extrabold text-3xl lg:text-5xl leading-10 lg:leading-[80px] tracking-tighter">
+                        Automate and
+                        Personalize your clients’ welcome
+                        process in few clicks!
+                    </h1>
+                    <p class="text-lg lg:text-xl text-gray mt-3">Project X is one app to unite teams, goals, and actions
+                        in one
+                        place.
+                    </p>
+                    <form class="">
+                        <div class="mt-10 lg:form-shadow lg:bg-white">
+                            <input type="text" class="bg-aquablue lg:bg-white text-xl px-6 py-6 w-full"
+                                placeholder="Your First Name" autocomplete="off">
+                        </div>
+                        <div class="lg:relative mt-6 lg:form-shadow lg:bg-white">
+                            <input type="mail" class="bg-aquablue lg:bg-white text-xl px-6 py-6 w-full"
+                                placeholder="Enter your email" autocomplete="off">
+                            <button type="submit"
+                                class="lg:absolute font-dm-sans font-bold right-3.5 top-3.5 text-xl leading-6 px-8 py-3 bg-blue text-white mt-4 lg:mt-0">Join
+                                our
+                                waitlist</button>
+                        </div>
+                    </form>
+                    <div class="flex items-center mt-14 mb-10">
+                        <p class="flex items-center text-gray mr-6">
+                            <img src="./img/tick.svg" alt="tick" class="mr-2">
+                            Free Register
+                        </p>
+                        <p class="flex items-center text-gray">
+                            <img src="./img/tick.svg" alt="tick" class="mr-2">
+                            Great Service
+                        </p>
+                    </div>
+                </div>
+                <div class="flex-1 hidden lg:block">
+                    <div class="flex flex-col items-end relative">
+                        <div
+                            class="bg-white relative z-20 inline-flex items-center px-9 py-6 w-[370px] rounded-[10px] deep-shadow mb-64">
+                            <div class="flex-middle w-14 h-14 rounded-full bg-blue/10 mr-6">
+                                <img src="./img/task.svg" alt="task">
+                            </div>
+                            <div>
+                                <p class="font-dm-sans font-extrabold text-[22px] leading-5 text-lightgray/70 count-one"
+                                    data-count="200">
+                                    200</p>
+                                <p class="font-dm-sans text-lightgray/70">Your finished tasks</p>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white p-5 rounded-[10px] flex flex-col justify-between deep-shadow w-[430px] h-[350px] absolute left-[10%] top-16 z-10">
+                            <p class="font-dm-sans font-medium text-xl text-ashgray/70">Your tasks</p>
+                            <div>
+                                <svg width="216" height="216" videbox="0 0 216 216" class="mx-auto">
+                                    <defs>
+                                        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#274299" />
+                                            <stop offset="50%" stop-color="#3A36DB" />
+                                            <stop offset="100%" stop-color="#36D6DB" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle class="stat" cx="108" cy="108" r="90" />
+                                    <circle class="load" cx="108" cy="108" r="90" transform="rotate(-90 108 108)" />
+                                    <text class="num" stroke-width="3" x="110" y="55%" text-anchor="middle">50
+                                    </text>
+                                </svg>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="inline-block w-5 h-5 bg-blue rounded-md mr-3"></span>
+                                <p class="font-dm-sans font-medium text-xl text-ashgray/70">Your tasks</p>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white relative z-20 inline-flex items-center px-9 py-6 w-[370px] rounded-[10px] deep-shadow">
+                            <div class="flex-middle w-14 h-14 rounded-full bg-blue/10 mr-6">
+                                <img src="./img/bag.svg" alt="task">
+                            </div>
+                            <div>
+                                <p class="font-dm-sans font-extrabold text-[22px] leading-5 text-lightgray/70 count-two"
+                                    data-count="370">
+                                    370</p>
+                                <p class="font-dm-sans text-lightgray/70">Client’s finished tasks</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="py-14 border-y border-ash/30 text-center hidden">
+            <div class="container mx-auto px-0 lg:px-20">
+                <p class="font-dm-sans font-bold text-lg lg:text-[22px] mb-8 lg:mb-14">Over 1k+ small businesses giving
+                    their
+                    customers
+                    great
+                    first impressions</p>
+                <div class="overflow-x-scroll no-scrollbar hidden lg:block">
+                    <div class="flex items-center justify-between gap-x-5 px-4 w-max lg:w-auto">
+                        <img src="./img/slack.svg" alt="name" class="basis-4/12 lg:basis-auto">
+                        <img src="./img/netflix.svg" alt="name" class="basis-4/12 lg:basis-auto">
+                        <img src="./img/airbnb.svg" alt="name" class="basis-4/12 lg:basis-auto">
+                        <img src="./img/google.svg" alt="name" class="basis-4/12 lg:basis-auto">
+                        <img src="./img/uber.svg" alt="name" class="basis-4/12 lg:basis-auto">
+                    </div>
+                </div>
+                <div class="block lg:hidden">
+                    <div class="client__slider">
+                        <div class="client__slide">
+                            <img src="./img/slack.svg" alt="name" class="mx-auto">
+                        </div>
+                        <div class="client__slide">
+                            <img src="./img/netflix.svg" alt="name" class="mx-auto">
+                        </div>
+                        <div class="client__slide">
+                            <img src="./img/airbnb.svg" alt="name" class="mx-auto">
+                        </div>
+                        <div class="client__slide">
+                            <img src="./img/google.svg" alt="name" class="mx-auto">
+                        </div>
+                        <div class="client__slide">
+                            <img src="./img/uber.svg" alt="name" class="mx-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-10 lg:pt-32 lg:pb-20 relative overflow-x-hidden">
+            <div class="container mx-auto px-4 lg:px-20">
+                <div>
+                    <h2
+                        class="w-full lg:w-5/12 font-extrabold text-3xl lg:text-[40px] leading-9 lg:leading-[48px] mb-2">
+                        We give you more free
+                        time and happier clients</h2>
+                    <p class="w-full lg:w-4/12 text-base lg:text-lg text-gray leading-5 mb-5 lg:mb-8">Lorem ipsum
+                        dolor sit amet, consectetur
+                        adipiscing elit.
+                        Lorem ipsum
+                        dolor sit amet, consectetur
+                        adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <a href="#"
+                        class="font-dm-sans font-bold inline-block px-8 py-3 bg-blue rounded-[50px] text-white">Get
+                        Started</a>
+                </div>
+                <div class="relative lg:-top-56">
+                    <img src="./img/process-full.svg" alt="process" class="relative z-20 w-full">
+                    <span
+                        class="absolute w-40 lg:w-[450px] h-40 lg:h-[450px] rounded-full bg-skyblue -right-24 lg:right-[-250px] -top-5 z-10"></span>
+                </div>
+                <div class="mt-12 block lg:hidden">
+                    <img src="./img/feature.png" alt="feature" class="mx-auto">
+                </div>
+            </div>
+        </section>
+        <section class="pt-40 lg:pt-96 pb-56 bg-aquablue  relative">
+            <div class="absolute float-image xl:top-[-15%] 2xl:top-[-30%] hidden lg:block">
+                <img src="./img/feature.png" alt="feature" class="mx-auto">
+            </div>
+            <span class="absolute top-curv-sm lg:top-curv"></span>
+            <div class="container mx-auto px-4 lg:px-20">
+                <div class="w-full lg:w-1/2 mx-auto text-center">
+                    <h2 class="font-extrabold text-3xl lg:text-[42px] leading-10 lg:leading-[60px] mb-3">It’s so easy to
+                        be efficient
+                    </h2>
+                    <p class="text-ashgray text-lg lg:text-xl leading-6 lg:leading-8">Deliver better results with fewer
+                        tools. Manage tasks,
+                        campaigns, and
+                        marketing content with
+                        real-time collaboration in
+                        one place.</p>
+                </div>
+                <div class="flex flex-col lg:flex-row justify-between gap-6  lg:gap-8 mt-20">
+                    <div class="flex-1 px-8 py-10 rounded-[20px] bg-white">
+                        <img src="./img/cup.svg" alt="Set Goals & Timelines">
+                        <h3 class="font-extrabold text-xl lg:text-2xl my-7 mb-4">Set Goals & Timelines</h3>
+                        <p class="text-ashgray leading-7">Set a timeline for your big-picture goals and build team
+                            alignment by
+                            automating progress as
+                            tasks are completed.</p>
+                    </div>
+                    <div class="flex-1 px-8 py-10 rounded-[20px] bg-white">
+                        <img src="./img/flower.svg" alt="Collaborate on Tasks">
+                        <h3 class="font-extrabold text-xl lg:text-2xl my-7 mb-4">Collaborate on Tasks</h3>
+                        <p class="text-ashgray leading-7">Create beautiful docs, notes for your projects and share with
+                            anyone. Project X also allows integration from google
+                            docs.</p>
+                    </div>
+                    <div class="flex-1 px-8 py-10 rounded-[20px] bg-white">
+                        <img src="./img/sun.svg" alt="Automate Sequence">
+                        <h3 class="font-extrabold text-xl lg:text-2xl my-7 mb-4">Automate Sequence</h3>
+                        <p class="text-ashgray leading-7">Automate steps and access progress reporting across all your
+                            projects and team activities to ensure operational clarity.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-10">
+                    <button class="bg-blue text-white font-dm-sans font-extrabold py-5 px-12 rounded-xl">More About
+                        Platform</button>
+                </div>
+            </div>
+        </section>
+        <section class="pt-0 lg:py-36">
+            <div class="container mx-auto px-4 lg:px-20">
+                <div class="text-center mb-12">
+                    <p class="font-dm-sans font-extrabold uppercase text-blue text-sm mb-3">Testimonials</p>
+                    <h2 class="font-extrabold text-3xl lg:text-[40px]">Check what our clients are saying</h2>
+                </div>
+                <div class="flex flex-col lg:flex-row items-center">
+                    <div class="mx-auto lg:mr-20 flex-shrink-0 relative w-full lg:w-5/12">
+                        <div class="testi-slider">
+                            <div class="testi-slide">
+                                <img src="./img/testi-1.png" alt="name" class="w-full">
+                            </div>
+                            <div class="testi-slide">
+                                <img src="./img/testi-1.png" alt="name" class="w-full">
+                            </div>
+                            <div class="testi-slide">
+                                <img src="./img/testi-1.png" alt="name" class="w-full">
+                            </div>
+                            <div class="testi-slide">
+                                <img src="./img/testi-1.png" alt="name" class="w-full">
+                            </div>
+                        </div>
+                        <button
+                            class="w-14 h-14 rounded-full bg-white arrow-shadow flex-middle arrow-absolute testi-arrow-prev"><img
+                                src="./img/arrow-prev.svg" alt="arrow-prev"></button>
+                        <button
+                            class="w-14 h-14 rounded-full bg-white arrow-shadow flex-middle arrow-absolute testi-arrow-next"><img
+                                src="./img/arrow-next.svg" alt="arrow-next"></button>
+                    </div>
+                    <div class="w-full lg:w-6/12 mt-14 lg:mt-0">
+                        <div class="testiquote-slider">
+                            <div class="quote-slide">
+                                <img src="./img/quote.svg" alt="quote">
+                                <div class="flex my-5">
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                </div>
+                                <p class="font-bold text-xl lg:text-3xl leading-7 lg:leading-10 mb-2">Project X is the
+                                    best
+                                    onboarding tool I've
+                                    ever
+                                    used.
+                                    In the
+                                    world full of
+                                    onboarding tools, they are awesome and easy
+                                    to use, whether you’re tech savvy or not.</p>
+                                <p class="font-bold text-lg lg:text-xl mb-0.5">Angela</p>
+                                <p class="text-gray">CEO AG Design</p>
+                            </div>
+                            <div class="quote-slide">
+                                <img src="./img/quote.svg" alt="quote">
+                                <div class="flex my-5">
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                </div>
+                                <p class="font-bold text-xl lg:text-3xl leading-7 lg:leading-10 mb-2">Project 2 is the
+                                    best
+                                    onboarding tool I've
+                                    ever
+                                    used.
+                                    In the
+                                    world full of
+                                    onboarding tools, they are awesome and easy
+                                    to use, whether you’re tech savvy or not.</p>
+                                <p class="font-bold text-lg lg:text-xl mb-0.5">Angela</p>
+                                <p class="text-gray">CEO AG Design</p>
+                            </div>
+                            <div class="quote-slide">
+                                <img src="./img/quote.svg" alt="quote">
+                                <div class="flex my-5">
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                </div>
+                                <p class="font-bold text-xl lg:text-3xl leading-7 lg:leading-10 mb-2">Project 3 is the
+                                    best
+                                    onboarding tool I've
+                                    ever
+                                    used.
+                                    In the
+                                    world full of
+                                    onboarding tools, they are awesome and easy
+                                    to use, whether you’re tech savvy or not.</p>
+                                <p class="font-bold text-lg lg:text-xl mb-0.5">Angela</p>
+                                <p class="text-gray">CEO AG Design</p>
+                            </div>
+                            <div class="quote-slide">
+                                <img src="./img/quote.svg" alt="quote">
+                                <div class="flex my-5">
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                    <div class="rating-star"></div>
+                                </div>
+                                <p class="font-bold text-xl lg:text-3xl leading-7 lg:leading-10 mb-2">Project 4 is the
+                                    best
+                                    onboarding tool I've
+                                    ever
+                                    used.
+                                    In the
+                                    world full of
+                                    onboarding tools, they are awesome and easy
+                                    to use, whether you’re tech savvy or not.</p>
+                                <p class="font-bold text-lg lg:text-xl mb-0.5">Angela</p>
+                                <p class="text-gray">CEO AG Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-40 lg:py-56 bg-skyblue bottom-round-xs lg:bottom-round relative overflow-hidden">
+            <!-- <span class="absolute top-curv-sm lg:top-curv"></span> -->
+            <div class="container mx-auto px-4 lg:px-20">
+                <div class="w-full lg:w-1/2 mx-auto text-center">
+                    <h2 class="font-extrabold text-3xl lg:text-[42px] leading-10 lg:leading-[60px] mb-3">Customize your
+                        Payment Plan to suit your Clients.
+                    </h2>
+                    <p class="text-ashgray text-lg lg:text-xl leading-6 lg:leading-8">Deliver better results with fewer
+                        tools. Manage tasks,
+                        campaigns, and
+                        marketing content with
+                        real-time collaboration in
+                        one place.</p>
+                </div>
+                <div class="mx-auto">
+                    <img src="./img/package.png" alt="package">
+                </div>
+            </div>
+        </section>
+        <section class="pb-12 lg:pb-32">
+            <div class="container mx-auto px-4 lg:px-20">
+                <div class="w-full lg:w-6/12 mb-10 lg:mb-20">
+                    <h2 class="text-4xl lg:text-[71px] leading-10 lg:leading-[76px] font-dm-sans font-extrabold">
+                        Fequently <br>
+                        asked questions</h2>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-x-12">
+                    <div class="basis-8/12">
+                        <div class="border border-ash3 p-6 mb-4 rounded-xl">
+                            <div class="flex items-center justify-between cursor-pointer faq__header open">
+                                <h3 class="text-lg lg:text-2xl font-extrabold basis-10/12">Are automated templates free
+                                    or paid
+                                    for?</h3>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 20.5V0.5H11V20.5H9Z"
+                                        fill="#3D3D3D" class="opacity-0" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M-1.13249e-06 9.5L20 9.5L20 11.5L-1.21991e-06 11.5L-1.13249e-06 9.5Z"
+                                        fill="#3D3D3D" />
+                                </svg>
+                            </div>
+                            <div class="overflow-hidden">
+                                <p class="pt-5 text-base lg:text-lg w-11/12 text-gray">Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing
+                                    elit.
+                                    Lorem
+                                    ipsum
+                                    dolor sit amet,
+                                    consectetur adipiscing elit. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </div>
+                        </div>
+                        <div class="border border-ash3 p-6 mb-4 rounded-xl">
+                            <div class="flex items-center justify-between cursor-pointer faq__header">
+                                <h3 class="text-lg lg:text-2xl font-extrabold basis-10/12">Are automated templates free
+                                    or paid
+                                    for?</h3>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 20.5V0.5H11V20.5H9Z"
+                                        fill="#3D3D3D" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M-1.13249e-06 9.5L20 9.5L20 11.5L-1.21991e-06 11.5L-1.13249e-06 9.5Z"
+                                        fill="#3D3D3D" />
+                                </svg>
+                            </div>
+                            <div class="max-h-0 overflow-hidden">
+                                <p class="pt-5 text-base lg:text-lg w-11/12 text-gray">Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing
+                                    elit.
+                                    Lorem
+                                    ipsum
+                                    dolor sit amet,
+                                    consectetur adipiscing elit. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </div>
+                        </div>
+                        <div class="border border-ash3 p-6 mb-4 rounded-xl">
+                            <div class="flex items-center justify-between cursor-pointer faq__header">
+                                <h3 class="text-lg lg:text-2xl font-extrabold basis-10/12">Are automated templates free
+                                    or paid
+                                    for?</h3>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 20.5V0.5H11V20.5H9Z"
+                                        fill="#3D3D3D" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M-1.13249e-06 9.5L20 9.5L20 11.5L-1.21991e-06 11.5L-1.13249e-06 9.5Z"
+                                        fill="#3D3D3D" />
+                                </svg>
+                            </div>
+                            <div class="max-h-0 overflow-hidden">
+                                <p class="pt-5 text-base lg:text-lg w-11/12 text-gray">Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing
+                                    elit.
+                                    Lorem
+                                    ipsum
+                                    dolor sit amet,
+                                    consectetur adipiscing elit. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </div>
+                        </div>
+                        <div class="border border-ash3 p-6 mb-4 rounded-xl">
+                            <div class="flex items-center justify-between cursor-pointer faq__header">
+                                <h3 class="text-lg lg:text-2xl font-extrabold basis-10/12">Are automated templates free
+                                    or paid
+                                    for?</h3>
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 20.5V0.5H11V20.5H9Z"
+                                        fill="#3D3D3D" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M-1.13249e-06 9.5L20 9.5L20 11.5L-1.21991e-06 11.5L-1.13249e-06 9.5Z"
+                                        fill="#3D3D3D" />
+                                </svg>
+                            </div>
+                            <div class="max-h-0 overflow-hidden">
+                                <p class="pt-5 text-base lg:text-lg w-11/12 text-gray">Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing
+                                    elit.
+                                    Lorem
+                                    ipsum
+                                    dolor sit amet,
+                                    consectetur adipiscing elit. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basis-4/12">
+                        <div class="border border-ash3 p-5 rounded-xl text-center">
+                            <img src="./img/faq.svg" alt="faq" class="mx-auto my-10">
+                            <h3 class="text-lg lg:text-xl font-extrabold mb-5">Do you have more questions?</h3>
+                            <p class="text-base lg:text-lg text-ashgray font-medium leading-7 px-1 lg:px-4 mb-6">Deliver
+                                better
+                                results with
+                                fewer
+                                tools. Manage
+                                tasks,
+                                campaigns, and
+                                marketing content
+                                with real-time collaboration in
+                                one place.</p>
+                            <a href="mailto:yourmail@mail.com"
+                                class="bg-red text-white py-5 rounded-xl w-8/12 mx-auto block">Send a Direct
+                                Mail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container mx-auto px-4 lg:px-20">
+            <div class="flex flex-col lg:flex-row justify-between items-start py-14">
+                <div class="basis-2/12 mb-10 lg:mb-0">
+                    <p class="text-xl font-dm-sans font-extrabold mb-2 lg:mb-5">Project X</p>
+                    <p class="text-gray">Deliver better results with fewer tools.</p>
+                    <div class="flex mt-5 lg:mt-8">
+                        <a href="#" class="mr-4"><img src="./img/linkedin.svg" alt="linkedin"></a>
+                        <a href="#" class="mr-4"><img src="./img/messenger.svg" alt="messenger"></a>
+                        <a href="#" class="mr-4"><img src="./img/twitter.svg" alt="twitter"></a>
+                        <a href="#" class="mr-4"><img src="./img/twoo.svg" alt="twoo"></a>
+                    </div>
+                </div>
+                <div class="basis-4/12">
+                    <p class="text-xl font-dm-sans font-extrabold mb-5">Join Our Newsletter</p>
+                    <form class="flex flex-col lg:flex-row lg:form-shadow bg-none lg:bg-[#f9f9f9] mb-5">
+                        <input type="text" class="bg-white text-xl px-6 py-4 basis-8/12" placeholder="Enter your email"
+                            autocomplete="off">
+                        <button type="submit"
+                            class="font-medium right-3.5 top-3.5 text-xl leading-6 px-8 py-4 bg-blue text-white basis-4/12 mt-5 lg:mt-0">Subscribe</button>
+                    </form>
+                    <p class="text-ashgray">* Will send you weekly updates for your better
+                        finance management.</p>
+                </div>
+            </div>
+            <div class="text-center py-4 lg:py-10 border-t border-ashgray/30">
+                <p class="font-medium">Copyright @ Project X 2022. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/custom.js"></script>
+</body>
+
+</html>
